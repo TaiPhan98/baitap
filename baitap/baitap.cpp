@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 using namespace std;
 
 void NHAP(int* arr, int n) {
@@ -10,22 +10,24 @@ void NHAP(int* arr, int n) {
 	}
 }
 
-int TIMMAX(int* arr, int n) {
+int TIMMAX(int* arr, int n) // tim max trong mảng
+{
 	int max = arr[0];
 	for (size_t i = 1; i < n; i++)
 	{
-		if (arr[i] > max) {
+		    if (arr[i] > max) {
 			max = arr[i];
 		}
 	}
 	return max;
 }
 
-int TIMMIN(int* arr, int n) {
+int TIMMIN(int* arr, int n) // tìm min trong mảng
+{
 	int min = arr[0];
 	for (size_t i = 1; i < n; i++)
 	{
-		if (arr[i] < min) {
+		    if (arr[i] < min) {
 			min = arr[i];
 		}
 	}
